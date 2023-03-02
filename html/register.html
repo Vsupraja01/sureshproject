@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" />
+    <!-- Fontawesome CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" /> <!-- Jquery Google CDN -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body class="">
+    <div class="container">
+        <div class="row justify-content-center wrapper" id="register-box">
+            <div class="col-lg-5 my-auto myShadow">
+                <div class="col-lg-12 bg-white p-4">
+                    <h5 class="text-center font-weight-bold text-primary"> Create Account </h5>
+                    <form method="post" id="register-form" action="../php/register.php">
+                        <?php include('errors.php'); ?>
+                        <div class="form-group"> <input type="text" id="name" name="username" class="form-control"
+                                placeholder="Full Name" value="<?php echo $username; ?>" /> </div>
+                        <div class="form-group"> <input type="email" id="email" name="email" class="form-control"
+                                placeholder="E-Mail"  value="<?php echo $email; ?>">  </div>
+                        <div class="form-group"> <input type="password" id="password" name="password_1"
+                                class="form-control" placeholder="Password" /> </div>
+                        <div class="form-group"> <input type="password" id="password" name="password_2"
+                                class="form-control" placeholder="Confirm Password" /> </div>
+                        <div class="form-group"> <input type="date" id="dob" name="dateob" class="form-control"
+                                placeholder="Date Of Birth" /> </div>
+                        <div class="form-group"> <input type="text" id="phone" name="phone" class="form-control"
+                                placeholder="Mobile Number" /> </div>
+                        <div class="form-group"> <input type="submit" id="register-btn" value="Sign Up"
+                                class="btn btn-primary btn-block myBtn" name="reg_user" /> </div>
+                        <p class="text-primary text-center">already have an account? <a href="../php/login.php">Login!</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

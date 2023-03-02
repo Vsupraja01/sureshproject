@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,600,700,800,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+}
+
+.myColor {
+    background-image: linear-gradient(to right, #f83600 50%, #f9d423 150%);
+}
+
+.myShadow {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.myBtn {
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+}
+.error {
+    margin: 10px auto; 
+    padding: 10px; 
+    border: 1px solid #a94442; 
+    color: #a94442; 
+    background: #f2dede; 
+    border-radius: 5px; 
+    text-align: left;
+  }
+@media (max-width: 720px) {
+    .wrapper {
+        margin: 2px;
+    }
+}
